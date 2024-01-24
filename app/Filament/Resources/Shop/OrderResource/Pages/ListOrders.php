@@ -3,12 +3,14 @@
 namespace App\Filament\Resources\Shop\OrderResource\Pages;
 
 use App\Filament\Resources\Shop\OrderResource;
+use Archilex\AdvancedTables\AdvancedTables;
 use Filament\Actions;
 use Filament\Pages\Concerns\ExposesTableToWidgets;
 use Filament\Resources\Pages\ListRecords;
 
 class ListOrders extends ListRecords
 {
+    use AdvancedTables;
     use ExposesTableToWidgets;
 
     protected static string $resource = OrderResource::class;
